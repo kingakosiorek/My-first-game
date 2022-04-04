@@ -21,11 +21,11 @@ try:
               ans = print('You talk with the man and are invited to his home.')
               ans = input('Do you want to go?')
               if ans == 'yes':
-                print('OK!')
+                print('You go with him and win the game!')
               elif ans == 'no':
-                print('Not ok!')
+                print('Unfortunately you enounter wild wolf which bites you. Game over!')
             elif ans == 'no':
-              ans = print('You go for 5 minutes and finally reach the forest')
+              ans = print('You go for 5 minutes and finally reach the forest. You win!')
           elif ans == 'go to the forest':
             print('You feel very weak and faint. Game over.')
         elif ans == 'around':
@@ -36,3 +36,4 @@ try:
     print('Ok, no is no.')
 except:
   print('Error!')
+
