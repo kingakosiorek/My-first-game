@@ -1,0 +1,38 @@
+print ('Welcome to my first game!')
+name = input('What is your name? ')
+
+helath = 10
+
+wants_to_play = input('Do you want to play? ').lower()
+try:
+  if wants_to_play == 'yes':
+    print('You are starting with', helath, 'health.')
+    left_or_right = input('First choice... Left or Right(left/right)? ')
+    if left_or_right == 'left':
+        ans = print('Nice, you follow the path and reach a lake...')
+        ans = input('Do you swim across or go around? ')
+        if ans == 'across':
+          ans = print('You managed to get across, but were bit by a fish and lost 5 health. You see beutiful forest in the distance') 
+          ans = input('Do you catch fish or just go to the forest? ')
+          if ans == 'catch fish':
+            ans = print('You eat fish and feel better. You gain 5 health points. You go straight on and meet young man.')
+            ans = input(' Do you want to talk with him? ')
+            if ans == 'yes':
+              ans = print('You talk with the man and are invited to his home.')
+              ans = input('Do you want to go?')
+              if ans == 'yes':
+                print('OK!')
+              elif ans == 'no':
+                print('Not ok!')
+            elif ans == 'no':
+              ans = print('You go for 5 minutes and finally reach the forest')
+          elif ans == 'go to the forest':
+            print('You feel very weak and faint. Game over.')
+        elif ans == 'around':
+          print('You got lost and did not know what do. Game over!')
+    elif left_or_right == 'right':
+      end = print('You fell down and lost!')
+  elif wants_to_play == 'no':
+    print('Ok, no is no.')
+except:
+  print('Error!')
